@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-for="(item, i) in videoList" :key="i">
-      <VideoJS :src="item.videoUrl" :type="item.type" />
+      <VideoJS :src="item.videoUrl" :type="item.type" :id="i" />
     </div>
   </div>
 </template>
