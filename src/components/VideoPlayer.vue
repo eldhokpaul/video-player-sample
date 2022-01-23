@@ -3,7 +3,7 @@
     <div class="videojs">
       <div class="video-inner-container">
         <video
-          id="vid1"
+          :id="'vid' + id"
           controls
           preload="auto"
           width="640"
@@ -27,6 +27,6 @@ import "video.js/dist/video.min.js";
 
 export default {
   name: "VideoJS",
-  props: ["src", "type"],
+  props: ["src", "type", "id"],
 };
 </script>
